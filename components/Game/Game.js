@@ -33,9 +33,13 @@ function Game() {
   }
 
   return (
-    <div className={styles.container}>
-      <Board board={board} handleHit={handleHit} handleMiss={handleMiss} />
-    </div>
+    <>
+      <div className={styles.container}>
+        <div className={styles.gameContainer}>
+          <Board board={board} handleHit={handleHit} handleMiss={handleMiss} />
+        </div>
+      </div>
+    </>
   )
 }
 
