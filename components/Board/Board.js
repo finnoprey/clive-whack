@@ -28,7 +28,7 @@ function Board(props) {
                 return (
                   <div className={styles.cell} key={key} >
                     <div className={styles.target} onMouseDown={() => { props.handleHit() }}>
-                      <img src={getRandomImagePath()} alt="Clive image" height="100%" /> 
+                      <img src={getRandomImagePath()} alt="Clive image" /> 
                     </div>
                   </div>
                 )
